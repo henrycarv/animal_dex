@@ -2,11 +2,11 @@
 
 ## Private Category
 
-Line 1 private
-Line 2 private
-Line 3 private
-Line 4 private
-Line 5 private
+Line 1 private  
+Line 2 private  
+Line 3 private  
+Line 4 private  
+Line 5 private  
 
 ## App overview
 
