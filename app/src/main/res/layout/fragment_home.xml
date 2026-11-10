@@ -8,18 +8,53 @@
 
     <EditText
         android:id="@+id/editTextText"
-        android:layout_width="210dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
+        android:layout_marginTop="43dp"
         android:layout_marginEnd="101dp"
-        android:layout_marginBottom="605dp"
+        android:background="#00FFFFFF"
+        android:cursorVisible="false"
         android:ems="10"
-        android:fontFamily="serif"
+        android:fontFamily="@font/momotrusdisplayregular"
+        android:gravity="center"
         android:inputType="text"
-        android:text="@string/app_name"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="USERNAME"
+        android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="USERNAME" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/profileImage"
+        android:layout_width="174dp"
+        android:layout_height="173dp"
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="138dp"
+        android:contentDescription="Profile picture"
+        android:padding="2dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:shapeAppearanceOverlay="@style/CircleImage"
+        app:strokeColor="?attr/colorPrimary"
+        app:strokeWidth="2dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/momotrusdisplayregular"
+        android:gravity="center"
+        android:text="Level"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
