@@ -6,4 +6,10 @@
     </style>
 
     <style name="Theme.Animal_dex" parent="Base.Theme.Animal_dex" />
+
+    <style name="ToolbarTitle" parent="TextAppearance.AppCompat.Title">
+        <item name="android:fontFamily">@font/momotrusdisplayregular</item>
+        <item name="fontFamily">@font/momotrusdisplayregular</item>
+        <item name="android:textSize">32sp</item>
+    </style>
 </resources>
