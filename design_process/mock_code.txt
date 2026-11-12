@@ -1,5 +1,19 @@
-class Animal {
-	val genus
-	val 
-	
-}
+Should I make a parent Animal class and multiple inherited family subclasses? 
+Technically it shouldn't have any different values...
+
+
+
+data class Animal (
+	val genus : String,
+	val species : String,
+	val class : String, //Amphibian, mammal, bird, or reptile
+	val seen : Boolean, //Read from savefile json`
+	val sight_date : LocalDate?, //Read from savefile json
+	val sight_location : String, //Read from savefile json
+	val image : String,
+	val description : String
+)
+
+Animals should be read from a json file
+
+The approach is to make everything val, when there is an update just copy the object and overwrite the old one.
