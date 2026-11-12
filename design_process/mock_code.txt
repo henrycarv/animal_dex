@@ -4,6 +4,7 @@ Technically it shouldn't have any different values...
 
 
 data class Animal (
+	val id : String,
 	val genus : String,
 	val species : String,
 	val class : String, //Amphibian, mammal, bird, or reptile
@@ -17,3 +18,26 @@ data class Animal (
 Animals should be read from a json file
 
 The approach is to make everything val, when there is an update just copy the object and overwrite the old one.
+
+Profile save file ->
+{
+	"username": "USERNAME",
+	"animals_seen": 0,
+	"mammals_seen": 0,
+	"reptiles_seen": 0,
+	"amphibians_seen": 0,
+	"birds_seen": 0
+}
+
+[
+	{
+		"id":"",
+		"genus":"",
+		"species":"",
+		"class":"",
+		"image":"",
+		"description":""
+	},
+	{ repeat
+	}
+]
